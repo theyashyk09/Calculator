@@ -6,6 +6,10 @@ This is a calculator developed using html, css and javascript which performs sim
 
 ## Video
 
+
+https://user-images.githubusercontent.com/109405477/193334665-1ac55138-32b2-4a6d-b66c-68a860a363bd.mp4
+
+
 **Check it out at : https://ykcalculator.netlify.app/**
 
 ## 🚀 About Me
