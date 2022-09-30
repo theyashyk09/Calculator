@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter Tight, sans-serif;
+  background-color: #fefeff;
+  overflow: hidden;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.calculator {
+  background-color: #0c2340;
+  padding: 40px;
+  border-radius: 7px;
+  box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.25),
+    inset -8px -8px 16px 0 rgba(0, 0, 0, 0.25),
+    inset 8px 8px 16px 0 rgba(51, 35, 134, 0.25);
+}
+
+button {
+  font-size: 22px;
+  width: 80px;
+  height: 65px;
+  text-align: center;
+  font-family: Inter Tight, sans-serif;
+  border-radius: 7px;
+  background-color: rgb(14, 33, 78);
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.21),
+    inset 8px 8px 16px 0 rgba(0, 0, 0, 0.21),
+    inset -8px -8px 16px 0 rgba(14, 33, 78, 0.21);
+  border-color: #0c2340;
+}
+
+button:hover {
+  transform: scale(1.03);
+  background-color: #4069c9;
+}
+
+.equal {
+  width: 164px;
+}
+
+input {
+  width: 331px;
+  font-size: 45px;
+  padding: 10px;
+  text-align: right;
+  border-radius: 7px;
+  background-color: #f9e38f;
+}
+
+.row {
+  margin-top: 7px;
+}
+
+.row-1 {
+  margin-top: 25px;
+}
+
+.ac {
+  background-color: #d5692a;
+  box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.11),
+    inset 8px 8px 16px 0 rgba(0, 0, 0, 0.11),
+    inset -8px -8px 16px 0 rgba(14, 33, 78, 0.11);
+  color: white;
+}
+
+.ac:hover {
+  background-color: #ff5e00;
+}
+
+.del {
+  background-color: #cd2a3d;
+  box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.11),
+    inset 8px 8px 16px 0 rgba(0, 0, 0, 0.11),
+    inset -8px -8px 16px 0 rgba(14, 33, 78, 0.11);
+  color: white;
+}
+
+.del:hover {
+  background-color: #ff001e;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-size: 50px;
+  background: linear-gradient(90deg, #1f33bb 0%, #3a47d5 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.logo {
+  height: 50px;
+  position: absolute;
+  top: 44px;
+  left: 40px;
+  z-index: -1;
+}
+
+@media screen and (max-width: 550px) {
+  .logo {
+    display: none;
+  }
+
+  button {
+    width: 64px;
+    height: 64px;
+  }
+
+  .equal {
+    width: 131px;
+  }
+
+  input {
+    width: 266px;
+  }
+
+  h1 {
+    margin-top: 75px;
+  }
+}
